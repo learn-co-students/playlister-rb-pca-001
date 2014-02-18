@@ -2,16 +2,16 @@ class Genre
 
   attr_accessor :name, :songs, :artists
 
-  @@genres = []
+  GENRES = []
 
   def initialize
     @songs = []
     @artists = []
-    @@genres << self
+    GENRES << self
   end
 
   def self.reset_genres
-    @@genres.clear
+    GENRES.clear
   end
 
   def self.count
@@ -19,7 +19,7 @@ class Genre
   end
 
   def self.all
-    @@genres
+    GENRES
   end
 
 end
