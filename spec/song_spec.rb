@@ -1,5 +1,3 @@
-require_relative './spec_helper'
-
 describe "Song" do
   it "can initialize a song" do
     expect(Song.new).to be_an_instance_of(Song)
