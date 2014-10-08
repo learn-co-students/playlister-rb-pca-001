@@ -1,4 +1,4 @@
-require_relative '../environment'
+require_relative "../config/environment"
 
 RSpec.configure do |config|
   # Use color in STDOUT
