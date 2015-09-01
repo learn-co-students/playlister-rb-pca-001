@@ -13,7 +13,7 @@ This is your first introduction to the "Playlister" domain model. In this first 
 
 ## Instructions
 
-For the most part, this is a test-driven lab. Follow the test output to define you classes with the appropriate attributes. The guidelines below are meant to help you build the associations. Read them through first, then proceed through the test suite by running `rspec --fail-fast`. Refer back to these guidelines to help you pass tests related to associations. 
+For the most part, this is a test-driven lab. Follow the test output to define your classes with the appropriate attributes. The guidelines below are meant to help you build the associations. Read them through first, then proceed through the test suite by running `learn --fail-fast`. Refer back to these guidelines to help you pass tests related to associations. 
 
 ### Belongs To and Has Many Associations 
 
@@ -40,5 +40,5 @@ An artist has many genres through his or her songs and a genre has many artists 
 
 ## Note
 
-When writing and calling the `#genre=(genre)` method for the `Song` class, keep in mind that the object being passed in is an entire Genre object, not a String representation of the Genre. For example, `#<Genre:0x007fbdca31ed88 @name="rap">`, not `'Rap'`. Similarly, when you call the `.add_song` method on an instance of `Artist`, the argument being passed in is *an instance of the `Song` class.
+When writing and calling the `.genre=(genre)` method for the `Song` class, keep in mind that the object being passed in is an entire Genre object, not a String representation of the Genre. For example, `#<Genre:0x007fbdca31ed88 @name="rap">`, not `'Rap'`. Similarly, when you call the `.add_song` method on an instance of `Artist`, the argument being passed in is *an instance of the `Song` class.
 
