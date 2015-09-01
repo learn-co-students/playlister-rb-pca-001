@@ -1,4 +1,3 @@
-require 'pry'
 describe "Song" do
   let(:song) {Song.new}
   it "can initialize a song" do
@@ -14,7 +13,6 @@ describe "Song" do
   it "can have a genre" do
      hip_hop = Genre.new
      song.genre = hip_hop
-     binding.pry
      expect(song.genre).to eq(hip_hop)
   end
 
