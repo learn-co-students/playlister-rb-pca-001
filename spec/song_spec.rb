@@ -1,26 +1,22 @@
 describe "Song" do
-
+  let(:song) {Song.new}
   it "can initialize a song" do
-    expect(Song.new).to be_an_instance_of(Song)
+     expect(song).to be_a(Song)
   end
 
   it "can have a name" do
-    song = Song.new
-    song.name = "Yellow Submarine"
-    expect(song.name).to eq("Yellow Submarine")
+     song.name = "Twinkle Twinkle Little Star"
+     expect(song.name).to eq("Twinkle Twinkle Little Star")
   end
 
   it "can have a genre" do
-    song = Song.new
-    genre = Genre.new.tap { |genre| genre.name = "blues" }
-    song.genre = genre
-    expect(song.genre.name).to eq("blues")
+     hip_hop = Genre.new
+     song.genre = hip_hop
+     expect(song.genre).to eq(hip_hop)
   end
 
   it "has an artist" do
-    artist = Artist.new.tap { |artist| artist.name = "Amos Lee" }
-    song = Song.new.tap { |song| song.name = "Sweet Pea" }
-    artist.add_song(song)
-    expect(song.artist).to eq(artist)
+     song.artist = "Door Mouse"
+     expect(song.artist).to eq("Door Mouse")
   end
 end
