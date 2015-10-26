@@ -35,7 +35,7 @@ For the most part, this is a test-driven lab. Follow the test output to define y
 An artist has many genres through his or her songs and a genre has many artists through it's songs. 
 
 * Write a `genres` instance method in the `Artist` class that iterates over that artist's songs and collects the genres of each song. 
-* Write an `aritsts` instance method in the `Genre` class that iterates over that genre's songs and collects the artists of each song. 
+* Write an `artists` instance method in the `Genre` class that iterates over that genre's songs and collects the artists of each song. 
 * Make sure the `.genres` method returns a unique lists of genres (no duplicates!). The same goes for the `.artsits` method. 
 
 ## Note
