@@ -8,7 +8,7 @@
 
 ## Overview
 
-This is your first introduction to the "Playlister" domain model. In this first iteration, we'll be building a class for `Song`, `Artist` and `Genre`. A song will will belong to an artist and an artist will have many songs. A song belongs to a genre and a genre belongs to a song. So, an Artist has many genres *through their songs*.
+This is your first introduction to the "Playlister" domain model. In this first iteration, we'll be building a class for `Song`, `Artist` and `Genre`. A song will belong to an artist and an artist will have many songs. A song belongs to a genre and a genre belongs to a song. So, an Artist has many genres *through their songs*.
 
 
 ## Instructions
@@ -43,4 +43,4 @@ An artist has many genres through his or her songs and a genre has many artists 
 When writing and calling the `.genre=(genre)` method for the `Song` class, keep in mind that the object being passed in is an entire Genre object, not a String representation of the Genre. For example, `#<Genre:0x007fbdca31ed88 @name="rap">`, not `'Rap'`. Similarly, when you call the `.add_song` method on an instance of `Artist`, the argument being passed in is *an instance of the `Song` class.
 
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/playlister-rb' title='Object Associations: Playlister'>Object Associations: Playlister</a> on Learn.co and start learning to code for free.</p>
+<p class='util--hide'>View <a href='https://learn.co/lessons/playlister-rb'>OO Playlister Ruby</a> on Learn.co and start learning to code for free.</p>
