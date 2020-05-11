@@ -46,7 +46,7 @@ describe "Genre" do
 
   describe "Class methods" do
 
-    it "can reset all genres that have been created" do 
+    it "can reset all genres that have been created" do
       Genre.new
       Genre.reset_genres
       expect(Genre.all).to be_empty

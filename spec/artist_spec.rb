@@ -1,3 +1,5 @@
+require "pry"
+
 describe "Artist" do
 
   it "can be initialized" do
@@ -51,7 +53,7 @@ describe "Artist" do
       Artist.reset_artists
       expect(Artist.all).to be_empty
     end
-    
+
     before(:each) do
       Artist.reset_artists
       @artist = Artist.new
